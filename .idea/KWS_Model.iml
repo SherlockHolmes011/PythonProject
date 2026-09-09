@@ -2,8 +2,13 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/asr_server" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/data" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/data/_background_noise_" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/data/keyword" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/data/silence" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/data/unknown" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/data_pool" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/esp32_firmware" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/export" isTestSource="false" />

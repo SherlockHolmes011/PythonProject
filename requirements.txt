@@ -1,0 +1,7 @@
+tensorflow>=2.15,<2.22
+numpy
+scipy
+librosa
+soundfile
+sounddevice
+matplotlib

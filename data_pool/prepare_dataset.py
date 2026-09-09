@@ -22,7 +22,7 @@ import csv
 import os
 import random
 from pathlib import Path
-DATA_ROOT = "data"
+DATA_ROOT = "C:/Users/reddy/PycharmProjects/PythonProject/data"
 LABELS = ["keyword", "unknown", "silence"]  # index order = model output order
 VAL_SPLIT = 0.15
 TEST_SPLIT = 0.15
@@ -45,7 +45,7 @@ def build_manifest():
     rows = []
     for label_idx, label in enumerate(LABELS):
         folder = os.path.join(DATA_ROOT, label)
-        files = list_wavs(DATA_ROOT)
+        files = list_wavs(folder)
         print(f"  {label:10s}: {len(files)} clips found in {folder}/")
         for f in files:
             rows.append((f, label_idx, label))
@@ -82,9 +82,9 @@ def main():
     train_rows, val_rows, test_rows = build_manifest()
 
     print("\nWriting manifests:")
-    write_csv(train_rows, "manifests/manifest_train.csv")
-    write_csv(val_rows, "manifests/manifest_val.csv")
-    write_csv(test_rows, "manifests/manifest_test.csv")
+    write_csv(train_rows, "C:/Users/reddy/PycharmProjects/PythonProject/manifests/manifest_train.csv")
+    write_csv(val_rows, "C:/Users/reddy/PycharmProjects/PythonProject/manifests/manifest_val.csv")
+    write_csv(test_rows, "C:/Users/reddy/PycharmProjects/PythonProject/manifests/manifest_test.csv")
 
     print("\nClass balance check (train set):")
     for label_idx, label in enumerate(LABELS):
