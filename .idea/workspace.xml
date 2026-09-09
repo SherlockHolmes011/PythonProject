@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71c84c17-e645-4ee5-9fd1-763ed530d29d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/KWS_Model.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample.py" afterDir="false" />
+    <list default="true" id="71c84c17-e645-4ee5-9fd1-763ed530d29d" name="Changes" comment="The initial stage for the model has been completed.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tflite-micro/tensorflow/lite/micro/compression/mnist_compression_tutorial.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tflite-micro/tensorflow/lite/micro/compression/mnist_compression_tutorial.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tflite-micro/tensorflow/lite/micro/examples/micro_speech/evaluate.py" beforeDir="false" afterPath="$PROJECT_DIR$/tflite-micro/tensorflow/lite/micro/examples/micro_speech/evaluate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tflite-micro/tensorflow/lite/micro/examples/micro_speech/evaluate_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tflite-micro/tensorflow/lite/micro/examples/micro_speech/evaluate_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tflite-micro/tensorflow/lite/micro/examples/micro_speech/train/train_micro_speech_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tflite-micro/tensorflow/lite/micro/examples/micro_speech/train/train_micro_speech_model.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tflite-micro/tensorflow/lite/micro/examples/mnist_lstm/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/tflite-micro/tensorflow/lite/micro/examples/mnist_lstm/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tflite-micro/third_party/xtensa/examples/pytorch_to_tflite/pytorch_to_tflite_converter/pytorch_to_onnx_to_tflite_int8.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tflite-micro/third_party/xtensa/examples/pytorch_to_tflite/pytorch_to_tflite_converter/pytorch_to_onnx_to_tflite_int8.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +24,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -39,19 +41,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.sample.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.prepare_dataset.executor": "Debug",
+    "Python.sample.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="prepare_dataset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="KWS_Model" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_pool" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_pool/prepare_dataset.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.prepare_dataset" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -67,9 +101,50 @@
       <option name="presentableId" value="Default" />
       <updated>1788449920844</updated>
     </task>
+    <task id="LOCAL-00001" summary="The initial stage for the model has been completed.">
+      <option name="closed" value="true" />
+      <created>1788599666049</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1788599666049</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="The initial stage for the model has been completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="The initial stage for the model has been completed." />
   </component>
 </project>
