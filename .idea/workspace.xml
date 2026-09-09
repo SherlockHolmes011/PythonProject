@@ -1,405 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71c84c17-e645-4ee5-9fd1-763ed530d29d" name="Changes" comment="The initial stage for the model has been completed.">
+    <list default="true" id="71c84c17-e645-4ee5-9fd1-763ed530d29d" name="Changes" comment="added wav file verification &#10;added verify file due to corrupted wav files">
       <change beforePath="$PROJECT_DIR$/.idea/KWS_Model.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/KWS_Model.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0000.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0001.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0002.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0003.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0004.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0005.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0006.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0007.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0008.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0009.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0010.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0011.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0012.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0013.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0014.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0015.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0016.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0017.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0018.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0019.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0020.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0021.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0022.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0023.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0024.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0025.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0026.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0027.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0028.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0029.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0030.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0031.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0032.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0033.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0034.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0035.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0036.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0037.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0038.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0039.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0040.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0041.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0042.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0043.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0044.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0045.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0046.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0047.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0048.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0049.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0050.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0051.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0052.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0053.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0054.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0055.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0056.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0057.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0058.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0059.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0060.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0061.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0062.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0063.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0064.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0065.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0066.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0067.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0068.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0069.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0070.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0071.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0072.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0073.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0074.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0075.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0076.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0077.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0078.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0079.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0080.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0081.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0082.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0083.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0084.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0085.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0086.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0087.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0088.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0089.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0090.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0091.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0092.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0093.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0094.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0095.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0096.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0097.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0098.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0099.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0100.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0101.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0102.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0103.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0104.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0105.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0106.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0107.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0108.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0109.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0110.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0111.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0112.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0113.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0114.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0115.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0116.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0117.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0118.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0119.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0120.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0121.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0122.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0123.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0124.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0125.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0126.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0127.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0128.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0129.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0130.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0131.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0132.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0133.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0134.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0135.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0136.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0137.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0138.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0139.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0140.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0141.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0142.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0143.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0144.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0145.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0146.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0147.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0148.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0149.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0150.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0151.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0152.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0153.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0154.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0155.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0156.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0157.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0158.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0159.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0160.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0161.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0162.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0163.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0164.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0165.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0166.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0167.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0168.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0169.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0170.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0171.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0172.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0173.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0174.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0175.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0176.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0177.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0178.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0179.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0180.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0181.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0182.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0183.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0184.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0185.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0186.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0187.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0188.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0189.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0190.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0191.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0192.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0193.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0194.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0195.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0196.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0197.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0198.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0199.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0200.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0201.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0202.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0203.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0204.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0205.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0206.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0207.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0208.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0209.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0210.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0211.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0212.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0213.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0214.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0215.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0216.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0217.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0218.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0219.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0220.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0221.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0222.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0223.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0224.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0225.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0226.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0227.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0228.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0229.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0230.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0231.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0232.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0233.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0234.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0235.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0236.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0237.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0238.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0239.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0240.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0241.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0242.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0243.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0244.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0245.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0246.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0247.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0248.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0249.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0250.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0251.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0252.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0253.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0254.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0255.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0256.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0257.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0258.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0259.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0260.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0261.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0262.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0263.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0264.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0265.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0266.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0267.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0268.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0269.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0270.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0271.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0272.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0273.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0274.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0275.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0276.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0277.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0278.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0279.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0280.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0281.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0282.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0283.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0284.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0285.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0286.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0287.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0288.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0289.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0290.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0291.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0292.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0293.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0294.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0295.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0296.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0297.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0298.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0299.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0300.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0301.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0302.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0303.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0304.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0305.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0306.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0307.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0308.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0309.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0310.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0311.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0312.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0313.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0314.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0315.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0316.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0317.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0318.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0319.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0320.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0321.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0322.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0323.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0324.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0325.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0326.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0327.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0328.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0329.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0330.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0331.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0332.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0333.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0334.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0335.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0336.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0337.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0338.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0339.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0340.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0341.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0342.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0343.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0344.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0345.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0346.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0347.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0348.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0349.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0350.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0351.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0352.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0353.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0354.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0355.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0356.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0357.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0358.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0359.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0360.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0361.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0362.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0363.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0364.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0365.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0366.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0367.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0368.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0369.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0370.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0371.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0372.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0373.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0374.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0375.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0376.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0377.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0378.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0379.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0380.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0381.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0382.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0383.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0384.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0385.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0386.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0487.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0488.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0489.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0490.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0491.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0492.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0493.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/_background_noise_/noise-free-sound-0494.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_pool/prepare_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_pool/prepare_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-27-17.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-37-42.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-37-51.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-38-22.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-38-29.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-38-50.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-39-09.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-39-58.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-40-43.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-41-21.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-42-59.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-46-47.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-46-52.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-47-41.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-48-29.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-49-45.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-49-56.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-50-02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-50-10.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-52-02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-52-42.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-53-11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_12-54-06.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-02-14.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-02-36.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-02-46.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-03-27.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-03-32.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-04-06.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-04-18.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-04-42.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-04-46.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-04-54.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-05-29.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-05-37.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-05-49.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-06-26.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-06-31.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-06-40.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-07-19.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-07-29.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-21-33.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-21-43.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-23-04.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-23-14.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-23-19.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-25-37.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-25-42.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-25-54.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-27-06.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-27-11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-27-39.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-28-09.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-28-15.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-28-36.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-28-55.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_13-29-01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_15-39-32.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_15-45-54.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_15-46-18.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_15-46-43.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_15-47-02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_15-47-31.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_15-48-03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_15-48-26.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_16-03-46.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_16-03-59.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_16-04-19.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_16-17-28.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_16-20-11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_16-20-17.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_16-22-23.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_16-23-24.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_16-26-13.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_16-27-19.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_16-27-27.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_16-31-32.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_17-41-16.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_17-41-24.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_17-41-27.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_17-47-44.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_17-47-46.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_17-47-49.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_18-52-47.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_18-53-03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_18-53-12.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_18-53-27.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_19-23-29.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_19-23-46.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_19-24-00.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_19-24-07.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-42-42.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-42-46.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-42-49.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-43-01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-43-04.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-43-14.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-43-26.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-43-30.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-43-37.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-43-39.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-45-46.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-45-55.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-46-39.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-46-50.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-46-53.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-47-13.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-47-17.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-47-21.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-47-37.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-47-40.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-47-42.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-47-53.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-47-56.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-47-58.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-49-23.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-49-31.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-49-34.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-49-37.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-53-27.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-53-31.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-53-34.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-57-03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-57-11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-57-21.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-57-37.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-57-40.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/keyword/2026-09-07_21-57-45.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/export/quantize_and_export.py" beforeDir="false" afterPath="$PROJECT_DIR$/export/quantize_and_export.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifests/manifest_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/manifests/manifest_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifests/manifest_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/manifests/manifest_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifests/manifest_val.csv" beforeDir="false" afterPath="$PROJECT_DIR$/manifests/manifest_val.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_train/train_kws_dscnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_train/train_kws_dscnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validate_wavs.py" beforeDir="false" afterPath="$PROJECT_DIR$/validate_wavs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -439,15 +177,20 @@
     "Python.prepare_dataset.executor": "Run",
     "Python.sample.executor": "Run",
     "Python.train_kws_dscnn.executor": "Run",
+    "Python.validate_wavs.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/reddy/PycharmProjects/PythonProject",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\reddy\PycharmProjects\PythonProject" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\reddy\PycharmProjects\PythonProject\data_pool" />
       <recent name="C:\Users\reddy\PycharmProjects\PythonProject\data" />
@@ -470,7 +213,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model_train/train_kws_dscnn.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/validate_wavs" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -503,6 +246,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="train_kws_dscnn" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="KWS_Model" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (PythonProject)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\reddy\PycharmProjects\PythonProject" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model_train/train_kws_dscnn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.train_kws_dscnn" />
+      <item itemvalue="Python.prepare_dataset" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.prepare_dataset" />
@@ -540,7 +312,23 @@
       <option name="project" value="LOCAL" />
       <updated>1788958104423</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="manifests complete &#10;ds-cnn model edited&#10;other files initialised">
+      <option name="closed" value="true" />
+      <created>1788966918254</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1788966918254</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added wav file verification &#10;added verify file due to corrupted wav files">
+      <option name="closed" value="true" />
+      <created>1788972469883</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1788972469883</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,6 +365,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="The initial stage for the model has been completed.&#10;Use SafeCast for float-to-integer conversions in CAST kernel (#3660)&#10;&#10;* Use SafeCast for float-to-integer conversions in CAST kernel&#10;&#10;* Updated by review" />
     <MESSAGE value="The initial stage for the model has been completed." />
-    <option name="LAST_COMMIT_MESSAGE" value="The initial stage for the model has been completed." />
+    <MESSAGE value="manifests complete &#10;ds-cnn model edited&#10;other files initialised" />
+    <MESSAGE value="added wav file verification &#10;added verify file due to corrupted wav files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added wav file verification &#10;added verify file due to corrupted wav files" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model_train/train_kws_dscnn.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

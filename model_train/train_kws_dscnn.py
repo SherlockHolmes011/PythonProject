@@ -21,10 +21,10 @@ import csv
 import glob
 import os
 
-import numpy as np
 import tensorflow as tf
 from tensorflow.keras import layers, models
-
+import sys
+sys.path.insert(0, "C:/Users/reddy/PycharmProjects/PythonProject")
 from log_mel_Extract.features import (
     INPUT_SHAPE,
     load_and_fix_length,
@@ -187,7 +187,7 @@ def main():
             save_best_only=True,
         ),
         tf.keras.callbacks.EarlyStopping(
-            monitor="val_accuracy", patience=8, restore_best_weights=True
+            monitor="val_accuracy", patience=15, restore_best_weights=True
         ),
         tf.keras.callbacks.ReduceLROnPlateau(
             monitor="val_loss", factor=0.5, patience=4, min_lr=1e-6

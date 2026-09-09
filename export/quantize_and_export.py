@@ -17,7 +17,8 @@ import os
 
 import numpy as np
 import tensorflow as tf
-
+import sys
+sys.path.insert(0, "C:/Users/reddy/PycharmProjects/PythonProject")
 from features import load_and_fix_length, extract_log_mel
 
 
