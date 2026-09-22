@@ -19,7 +19,8 @@ import numpy as np
 import tensorflow as tf
 import sys
 sys.path.insert(0, "C:/Users/reddy/PycharmProjects/PythonProject")
-from features import load_and_fix_length, extract_log_mel
+
+from log_mel_Extract.features import load_and_fix_length, extract_log_mel
 
 
 def representative_dataset_gen(manifest_path, num_samples=300):
@@ -100,12 +101,12 @@ def main():
 
     tflite_bytes = quantize_model(args.model, args.manifest, tflite_path)
 
-    cc_path = os.path.join(args.out_dir, "kws_model_data.cc")
-    h_path = os.path.join(args.out_dir, "kws_model_data.h")
+    cc_path = os.path.join(args.out_dir, "model_data.cc")
+    h_path = os.path.join(args.out_dir, "model_data.h")
     tflite_to_c_array(tflite_bytes, args.var_name, cc_path, h_path)
 
     print(
-        "\nDone. Copy kws_model_data.cc / .h into your ESP32 firmware "
+        "\nDone. Copy model_data.cc / .h into your ESP32 firmware "
         "project alongside the TFLite Micro interpreter, and point it at "
         f"`{args.var_name}` / `{args.var_name}_len` when loading the model."
     )

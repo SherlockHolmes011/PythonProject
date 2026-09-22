@@ -37,15 +37,14 @@ def find_bad_files(scan_root):
     for dirpath, _, filenames in os.walk(scan_root):
         for fname in filenames:
             if not fname.lower().endswith(".wav"):
-                continue
-            total += 1
-            path = os.path.join(dirpath, fname)
-            size = os.path.getsize(path)
-            try:
-                with sf.SoundFile(path) as f:
-                    _ = f.frames  # touch it to force a real read check
-            except Exception as e:
-                bad_files.append((path, size, str(e)))
+                total += 1
+                path = os.path.join(dirpath, fname)
+                size = os.path.getsize(path)
+                try:
+                    with sf.SoundFile(path) as f:
+                        _ = f.frames  # touch it to force a real read check
+                except Exception as e:
+                    bad_files.append((path, size, str(e)))
 
     return total, bad_files
 

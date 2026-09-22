@@ -1,3 +1,5 @@
+
+
 """
 train_kws_dscnn.py
 
@@ -187,7 +189,7 @@ def main():
             save_best_only=True,
         ),
         tf.keras.callbacks.EarlyStopping(
-            monitor="val_accuracy", patience=15, restore_best_weights=True
+            monitor="val_accuracy", patience=27, restore_best_weights=True
         ),
         tf.keras.callbacks.ReduceLROnPlateau(
             monitor="val_loss", factor=0.5, patience=4, min_lr=1e-6

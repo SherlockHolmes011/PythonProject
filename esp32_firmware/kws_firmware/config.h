@@ -2,17 +2,19 @@
 // All the tunable constants live here so you don't have to hunt through
 // the rest of the firmware to adjust hardware pins or detection behavior.
 
+
 #ifndef CONFIG_H
 #define CONFIG_H
 
 // ---- Microphone selection ----
 // Change ONE line (MIC_TYPE below) to switch mic hardware -- both
 // drivers expose the identical audio_provider_*() functions, so nothing
+
 // else in the firmware needs to change either way.
 #define MIC_TYPE_I2S      0   // digital I2S mic, e.g. INMP441
 #define MIC_TYPE_ANALOG   1   // bare 2-pin electret capsule via ADC
 
-#define MIC_TYPE   MIC_TYPE_ANALOG   // <- currently set for your electret
+#define MIC_TYPE   MIC_TYPE_I2S   // <- currently set for your electret
                                       //    capsule. Change to MIC_TYPE_I2S
                                       //    when you switch back -- that's
                                       //    the only line you need to touch.
@@ -45,7 +47,14 @@
 
 // ---- Circular pre-roll buffer: how much audio we keep ready to send
 // the instant a keyword is confirmed (covers the word + lead-in) ----
-#define PREROLL_SECONDS   1.5f
+// HARD CONSTRAINT: this must be >= CLIP_SECONDS. g_audio_scratch in
+// kws_firmware.ino is sized to PREROLL_SAMPLES and shared with
+// run_inference(), which always needs a full CLIP_SAMPLES-sized write.
+// Going below CLIP_SECONDS causes a buffer overflow on every single
+// inference call -- this exact mistake caused a real crash/garbage-
+// output bug during development. The static_assert a few lines down
+// makes this impossible to silently reintroduce.
+#define PREROLL_SECONDS   1.0f
 #define PREROLL_SAMPLES   (int)(SAMPLE_RATE * PREROLL_SECONDS)
 
 // ---- Inference cadence: how often we run the model on the last 1s
@@ -54,7 +63,7 @@
 #define INFERENCE_INTERVAL_MS   200
 
 // ---- Detection decision (see the threshold+smoothing design) ----
-#define DETECTION_THRESHOLD        0.6f   // model confidence cutoff
+#define DETECTION_THRESHOLD        0.9f   // model confidence cutoff
 #define CONSECUTIVE_FRAMES_NEEDED  3      // how many consecutive
                                            // inference passes must clear
                                            // the threshold before we trigger
@@ -63,10 +72,10 @@
 #define COOLDOWN_MS   2000
 
 // ---- Cloud ASR endpoint (fill in your own server) ----
-#define WIFI_SSID       "YOUR_WIFI_SSID"
-#define WIFI_PASSWORD   "YOUR_WIFI_PASSWORD"
-#define ASR_HOST        "your-asr-server.example.com"
-#define ASR_PORT        443
+#define WIFI_SSID       "M15"
+#define WIFI_PASSWORD   "12345678"
+#define ASR_HOST        "0.0.0.0"
+#define ASR_PORT        8443
 #define ASR_PATH        "/stream"
 
 // ---- Power management: "blink, don't stare" ----
@@ -83,13 +92,24 @@
 // ---- TFLite Micro tensor arena size. Start here and grow if the
 // interpreter reports AllocateTensors() failing -- print the actual
 // bytes used (see main .ino) and right-size this once you know it. ----
-#define TENSOR_ARENA_SIZE (40 * 1024)
+#define TENSOR_ARENA_SIZE (16 * 1024)
 
 // ---- TLS: encrypts everything in transit between the ESP32 and your
 // ASR server, so no one snooping on the WiFi network or the path to
 // your server can read the audio -- see the chat explanation for what
 // this does and does NOT guarantee. ----
-#define USE_TLS   1   // 0 = plain TCP (only for local testing on a
+#define USE_TLS   0   // 0 = plain TCP (only for local testing on a
                        // trusted network -- never for anything real)
+
+// ---- Safety net: catches the exact PREROLL < CLIP buffer-overflow bug
+// at COMPILE time instead of as a silent runtime crash. If this line
+// ever fails to compile, it's telling you PREROLL_SECONDS is too small
+// -- raise it, don't remove this check. ----
+static_assert(PREROLL_SAMPLES >= CLIP_SAMPLES,
+              "PREROLL_SECONDS must be >= CLIP_SECONDS -- g_audio_scratch "
+              "is shared between inference and streaming, and inference "
+              "always needs a full CLIP_SAMPLES-sized read. Going below "
+              "this causes a real buffer overflow, not just a smaller "
+              "pre-roll window.");
 
 #endif  // CONFIG_H

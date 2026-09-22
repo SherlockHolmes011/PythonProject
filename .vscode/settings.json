@@ -1,0 +1,6 @@
+{
+  "vs-arduino.arduinoCliPath": "C:\\Users\\reddy\\bin\\arduino-cli.exe",
+  "vs-arduino.board": "esp32:esp32:esp32",
+  "vs-arduino.boardName": "ESP32 Dev Module",
+  "vs-arduino.port": "COM5"
+}

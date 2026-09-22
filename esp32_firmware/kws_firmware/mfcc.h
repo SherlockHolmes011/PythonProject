@@ -16,7 +16,13 @@
 
 // Mel filterbank weights, built once at startup.
 // Shape: [N_MELS][N_FFT/2 + 1]
-static float g_mel_filterbank[N_MELS][N_FFT / 2 + 1];
+// Stored as fixed-point (uint16_t, scaled by MEL_FILTERBANK_SCALE) instead
+// of float -- these weights are always in [0.0, 1.0], so this halves the
+// array's static RAM footprint (20,560 -> 10,280 bytes for N_MELS=20,
+// N_FFT=512) with negligible precision loss, well below what the int8
+// model quantization already introduces downstream.
+#define MEL_FILTERBANK_SCALE 65535.0f
+static uint16_t g_mel_filterbank[N_MELS][N_FFT / 2 + 1];
 
 inline float hz_to_mel(float hz) {
   return 2595.0f * log10f(1.0f + hz / 700.0f);
@@ -48,16 +54,18 @@ inline void mfcc_init_filterbank() {
     int center = bin_points[m + 1];
     int right = bin_points[m + 2];
     for (int b = 0; b < n_bins; b++) {
-      g_mel_filterbank[m][b] = 0.0f;
+      g_mel_filterbank[m][b] = 0;
     }
     for (int b = left; b < center; b++) {
       if (b >= 0 && b < n_bins && center > left) {
-        g_mel_filterbank[m][b] = (float)(b - left) / (float)(center - left);
+        float w = (float)(b - left) / (float)(center - left);
+        g_mel_filterbank[m][b] = (uint16_t)roundf(w * MEL_FILTERBANK_SCALE);
       }
     }
     for (int b = center; b < right; b++) {
       if (b >= 0 && b < n_bins && right > center) {
-        g_mel_filterbank[m][b] = (float)(right - b) / (float)(right - center);
+        float w = (float)(right - b) / (float)(right - center);
+        g_mel_filterbank[m][b] = (uint16_t)roundf(w * MEL_FILTERBANK_SCALE);
       }
     }
   }
@@ -83,13 +91,17 @@ inline void dct_ii(const float* in, int n_in, float* out, int n_out) {
 inline void compute_mfcc(const int16_t* audio, float out_features[N_FRAMES][N_MELS]) {
   static float real[N_FFT];
   static float imag[N_FFT];
-  static float window[WIN_LENGTH];
+  // Same fixed-point trick as g_mel_filterbank: Hamming window values are
+  // always in [0.08, 1.0], so uint16_t (scaled by MEL_FILTERBANK_SCALE)
+  // costs half the RAM (800 bytes vs 1,600) with negligible precision loss.
+  static uint16_t window[WIN_LENGTH];
   static bool window_init = false;
 
   if (!window_init) {
     // Hamming window, matching librosa's default.
     for (int i = 0; i < WIN_LENGTH; i++) {
-      window[i] = 0.54f - 0.46f * cosf(2.0f * M_PI * i / (WIN_LENGTH - 1));
+      float w = 0.54f - 0.46f * cosf(2.0f * M_PI * i / (WIN_LENGTH - 1));
+      window[i] = (uint16_t)roundf(w * MEL_FILTERBANK_SCALE);
     }
     window_init = true;
   }
@@ -99,7 +111,7 @@ inline void compute_mfcc(const int16_t* audio, float out_features[N_FRAMES][N_ME
 
     for (int i = 0; i < N_FFT; i++) {
       if (i < WIN_LENGTH && (start + i) < CLIP_SAMPLES) {
-        real[i] = (audio[start + i] / 32768.0f) * window[i];
+        real[i] = (audio[start + i] / 32768.0f) * ((float)window[i] / MEL_FILTERBANK_SCALE);
       } else {
         real[i] = 0.0f;  // zero-padded to N_FFT
       }
@@ -119,8 +131,10 @@ inline void compute_mfcc(const int16_t* audio, float out_features[N_FRAMES][N_ME
     for (int m = 0; m < N_MELS; m++) {
       float sum = 0.0f;
       for (int b = 0; b < N_FFT / 2 + 1; b++) {
-        sum += power[b] * g_mel_filterbank[m][b];
+        sum += power[b] * (float)g_mel_filterbank[m][b];
       }
+      sum /= MEL_FILTERBANK_SCALE;  // undo the fixed-point scale once per
+                                     // band, instead of once per multiply
       mel_energies[m] = logf(sum + 1e-6f);  // matches features.py's 1e-6 epsilon
     }
 

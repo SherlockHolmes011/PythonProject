@@ -49,7 +49,13 @@ inline void audio_provider_init() {
 // whatever new samples are available and appends them to the circular
 // buffer. INMP441 gives 32-bit words; we shift down to 16-bit PCM.
 inline void audio_provider_poll() {
-  static int32_t raw_buf[256];
+  // Shrunk from 256 -> 64: this is only the software chunk size we copy
+  // out of the I2S driver per call, not the driver's own internal DMA
+  // buffering (dma_buf_count=8 x dma_buf_len=256 below, unchanged --
+  // that's allocated separately on the heap and keeps the same ~128ms
+  // of safety margin either way). Saves 768 bytes of static RAM; poll()
+  // just does slightly more, cheaper reads per full DMA buffer drained.
+  static int32_t raw_buf[64];
   size_t bytes_read = 0;
 
   i2s_read(I2S_PORT, raw_buf, sizeof(raw_buf), &bytes_read, 0);

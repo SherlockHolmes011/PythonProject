@@ -21,13 +21,15 @@
 // model_data.h/.cc with your actual trained+quantized model (see the
 // comment in model_data.h) and validate feature parity (see
 // README_ESP32.md).
-
+/*
 #include <WiFi.h>
 #include <WiFiClientSecure.h>
+
+ */
 #include <esp_pm.h>
 #include <esp_sleep.h>
-#include <TensorFlowLite_ESP32.h>
-#include "tensorflow/lite/micro/all_ops_resolver.h"
+#include <Chirale_TensorFlowLite.h>
+#include "tensorflow/lite/micro/micro_mutable_op_resolver.h"
 #include "tensorflow/lite/micro/micro_interpreter.h"
 #include "tensorflow/lite/micro/micro_log.h"
 #include "tensorflow/lite/schema/schema_generated.h"
@@ -53,7 +55,7 @@ namespace {
 }
 
 // ---- Detection state ----
-enum DeviceState { LISTENING, STREAMING, COOLDOWN };
+enum DeviceState { LISTENING, COOLDOWN };
 DeviceState g_state = LISTENING;
 int g_consecutive_hits = 0;
 unsigned long g_cooldown_until_ms = 0;
@@ -78,7 +80,7 @@ void print_state_change(DeviceState new_state) {
   Serial.print("[state] -> ");
   switch (new_state) {
     case LISTENING: Serial.println("LISTENING"); break;
-    case STREAMING: Serial.println("STREAMING"); break;
+    //case STREAMING: Serial.println("STREAMING"); break;
     case COOLDOWN:  Serial.println("COOLDOWN");  break;
   }
 }
@@ -90,7 +92,17 @@ void setup_model() {
     while (true) delay(1000);
   }
 
-  static tflite::AllOpsResolver resolver;  // simplest to get compiling;
+  static tflite::MicroMutableOpResolver<8> resolver;
+  resolver.AddConv2D();
+  resolver.AddDepthwiseConv2D();
+  resolver.AddMean();
+  resolver.AddFullyConnected();
+  resolver.AddSoftmax();
+  resolver.AddReshape();
+  resolver.AddQuantize();
+  resolver.AddDequantize();
+
+  // simplest to get compiling;
   // once it works, swap for a MicroMutableOpResolver with only the ops
   // your model actually uses (Conv2D, DepthwiseConv2D, MaxPool2D, Mean,
   // FullyConnected, Softmax, Reshape/Quantize) to save flash.
@@ -113,7 +125,7 @@ void setup_model() {
   Serial.printf("[model] input scale=%.6f zero_point=%d\n",
                 model_input->params.scale, model_input->params.zero_point);
 }
-
+/*
 void connect_wifi() {
   Serial.print("[wifi] connecting");
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
@@ -121,9 +133,9 @@ void connect_wifi() {
     delay(300);
     Serial.print(".");
   }
-  Serial.println(" connected");
+  //Serial.println(" connected");
 }
-
+*/
 // "Blink, don't stare": configures ESP-IDF's automatic tickless-idle
 // light sleep. Unlike a manual esp_light_sleep_start() call (which would
 // require us to explicitly stop and restart I2S ourselves), this mode
@@ -200,17 +212,18 @@ float run_inference() {
   int8_t raw = model_output->data.int8[CLASS_KEYWORD];
   return (raw - out_zero_point) * out_scale;
 }
-
+/*
 // Streams the pre-roll buffer + a short tail of live audio to the cloud
 // ASR server as raw 16-bit PCM, over TLS (see the chat explanation for
 // exactly what this does and doesn't protect against). (Swap raw PCM for
 // Opus/mu-law encoding once the basic path works -- see the design
 // discussion for why that helps both latency and bandwidth.)
-void stream_to_cloud_asr() {
+//void stream_to_cloud_asr() {
 #if USE_TLS
   WiFiClientSecure client;
   #if defined(ASR_SERVER_CA_CERT)
     client.setCACert(ASR_SERVER_CA_CERT);  // verifies the server's identity
+
   #else
     client.setInsecure();  // TESTING ONLY -- see certs.h. Encrypts the
                             // connection but does NOT verify who's on the
@@ -233,7 +246,7 @@ void stream_to_cloud_asr() {
   audio_provider_get_recent(g_audio_scratch, PREROLL_SAMPLES);
 
   String header = String("POST ") + ASR_PATH + " HTTP/1.1\r\n" +
-                  "Host: " + ASR_HOST + "\r\n" +
+                  //"Host: " + ASR_HOST + "\r\n" +
                   "Content-Type: audio/l16;rate=16000\r\n" +
                   "Content-Length: " + String(PREROLL_SAMPLES * 2) + "\r\n" +
                   "Connection: close\r\n\r\n";
@@ -244,8 +257,8 @@ void stream_to_cloud_asr() {
 
   unsigned long stream_start = millis();
   const unsigned long STREAM_DURATION_MS = 3000;  // simple fixed window;
-  // swap for real VAD-based end-of-speech detection once basic streaming
-  // is verified working.
+   swap for real VAD-based end-of-speech detection once basic streaming
+   is verified working.
 
   while (millis() - stream_start < STREAM_DURATION_MS) {
     audio_provider_poll();
@@ -258,7 +271,7 @@ void stream_to_cloud_asr() {
   client.stop();
   Serial.println("[stream] done");
 }
-
+*/
 void setup() {
   Serial.begin(115200);
   delay(500);
@@ -310,12 +323,12 @@ void loop() {
       if (g_consecutive_hits >= CONSECUTIVE_FRAMES_NEEDED) {
         Serial.println("[detect] KEYWORD CONFIRMED");
         g_consecutive_hits = 0;
-        g_state = STREAMING;
+        g_state = COOLDOWN;
         print_state_change(g_state);
       }
       break;
     }
-
+/*
     case STREAMING: {
       if (WiFi.status() != WL_CONNECTED) connect_wifi();
       stream_to_cloud_asr();
@@ -324,7 +337,7 @@ void loop() {
       print_state_change(g_state);
       break;
     }
-
+*/
     case COOLDOWN: {
       if (millis() >= g_cooldown_until_ms) {
         g_state = LISTENING;
